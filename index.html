@@ -11,41 +11,47 @@
       margin: 0;
       background: #0a0a0a;
       color: #f5f5f5;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       padding: 2rem;
     }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: #00d8ff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+    .hero {
+      margin-top: 3rem;
+    }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
     }
     p {
       max-width: 700px;
-      font-size: 1.2rem;
-    }
-    a.button {
-      margin-top: 2rem;
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #00d8ff;
-      color: #0a0a0a;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    a.button:hover {
-      background: #00aacc;
     }
   </style>
 </head>
 <body>
-  <h1>Precision. Performance. Matter.</h1>
-  <p>Welcome to Apex MatterWorks — we thrive where advanced materials, additive manufacturing, and next-gen engineering converge.</p>
-  <a href="home.html" class="button">Enter Site</a>
+  <nav>
+    <div><strong>Apex MatterWorks</strong></div>
+    <div>
+      <a href="mission.html">Mission</a>
+      <a href="materials.html">Materials</a>
+      <a href="additive.html">Additive MFG</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="quote.html">Get a Quote</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Precision. Performance. Matter.</h1>
+    <p>Welcome to Apex MatterWorks, where advanced materials, additive manufacturing, and next-gen engineering converge.</p>
+  </section>
 </body>
 </html>
