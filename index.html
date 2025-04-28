@@ -15,12 +15,12 @@
       padding: 2rem;
     }
     nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 35px;
-  border-bottom: 1px solid #333;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 35px;
+      border-bottom: 1px solid #333;
+    }
     nav a {
       color: #00d8ff;
       text-decoration: none;
@@ -29,12 +29,34 @@
     }
     .hero {
       margin-top: 3rem;
+      text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
+    .section {
+      margin: 4rem 0;
+      text-align: center;
     }
-    p {
-      max-width: 700px;
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border: 1px solid #333;
+    }
+    .section button {
+      background-color: #00d8ff;
+      color: #0a0a0a;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .section button:hover {
+      background-color: #00b0cc;
+    }
+    h1, h2 {
+      font-weight: 600;
     }
   </style>
 </head>
@@ -45,9 +67,10 @@
       <strong style="font-size: 1.5rem;">Apex MatterWorks</strong>
     </div>
     <div>
-      <a href="mission.html">Mission</a>
+      <a href="index.html">Home</a>
       <a href="materials.html">Materials</a>
-      <a href="additive.html">Additive MFG</a>
+      <a href="fabrication.html">Fabrication</a>
+      <a href="characterization.html">Characterization</a>
       <a href="gallery.html">Gallery</a>
       <a href="quote.html">Get a Quote</a>
     </div>
@@ -55,7 +78,35 @@
 
   <section class="hero">
     <h1>Precision. Performance. Matter.</h1>
-    <p>Welcome to Apex MatterWorks, where advanced materials, additive manufacturing, and next-gen engineering converge.</p>
+    <p>Welcome to Apex MatterWorks, where advanced materials, scalable manufacturing, and next-gen engineering converge to empower real-world innovation.</p>
   </section>
+
+  <section class="section">
+    <h2>Advanced Materials</h2>
+    <img src="images/index/index_image1.jpg" alt="Pendant Drop and XRD">
+    <br>
+    <button onclick="window.location.href='materials.html'">Explore Materials</button>
+  </section>
+
+  <section class="section">
+    <h2>Precision Fabrication</h2>
+    <img src="images/index/index_image2.jpg" alt="Silver SAW Device and Nickel Bronco Print">
+    <br>
+    <button onclick="window.location.href='fabrication.html'">Explore Fabrication</button>
+  </section>
+
+  <section class="section">
+    <h2>Device Characterization</h2>
+    <img src="images/index/index_image3.jpg" alt="Raman Mapping and S21 Measurement">
+    <br>
+    <button onclick="window.location.href='characterization.html'">Explore Characterization</button>
+  </section>
+
+  <section class="section">
+    <h2>Start Your Project</h2>
+    <p>Ready to prototype, fabricate, or collaborate? Let's build something extraordinary together.</p>
+    <button onclick="window.location.href='quote.html'">Get a Quote</button>
+  </section>
+
 </body>
 </html>
