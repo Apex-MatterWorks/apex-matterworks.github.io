@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/logo/favicon.png" />
   <title>Mission | Apex MatterWorks</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
   <style>
@@ -17,7 +18,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 1rem;
+      height: 35px;
       border-bottom: 1px solid #333;
     }
     nav a {
@@ -26,8 +27,11 @@
       margin: 0 0.5rem;
       font-weight: 600;
     }
+    .hero {
+      margin-top: 3rem;
+    }
     h1 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     p {
@@ -65,7 +69,10 @@
 </head>
 <body>
   <nav>
-    <div><strong>Apex MatterWorks</strong></div>
+    <div style="display: flex; align-items: center;">
+      <img src="images/logo/Logo_AM.jpg" alt="Apex MatterWorks Logo" style="height: 60px; margin-right: 10px; transform: translateY(-15px);">
+      <strong style="font-size: 1.5rem;">Apex MatterWorks</strong>
+    </div>
     <div>
       <a href="index.html">Home</a>
       <a href="mission.html">Mission</a>
@@ -76,36 +83,38 @@
     </div>
   </nav>
 
-  <h1>Our Mission</h1>
-  <p>
-    Apex MatterWorks exists to transform the impossible into reality — one engineered material at a time. 
-    We operate at the intersection of advanced manufacturing and functional nanomaterials, pioneering scalable innovations 
-    that empower the next generation of electronics, energy systems, and intelligent substrates.
-  </p>
+  <section class="hero">
+    <h1>Our Mission</h1>
+    <p>
+      Apex MatterWorks exists to transform the impossible into reality — one engineered material at a time. 
+      We operate at the intersection of advanced manufacturing and functional nanomaterials, pioneering scalable innovations 
+      that empower the next generation of electronics, energy systems, and intelligent substrates.
+    </p>
 
-  <h2 style="text-align: center; margin-top: 3rem;">Aerosol Jet Printing</h2>
+    <h2 style="text-align: center; margin-top: 3rem;">Aerosol Jet Printing</h2>
 
-  <div style="border: 1px solid #444; border-radius: 10px; padding: 1rem; background-color: #111; max-width: 650px; margin: 2rem auto; text-align: center;">
-    <img 
-      src="images/mission/atomization_schematic.jpg" 
-      alt="Ultrasonic Atomization of Nanoparticle Ink" 
-      style="width: 100%; height: auto; border-radius: 6px;" 
-    />
-    <div style="font-size: 0.9rem; margin-top: 0.75rem; color: #aaa; line-height: 1.5;">
-      <strong>Figure:</strong> In this process, ultrasonically atomized nanoparticle ink droplets are carried from the ink reservoir to the printhead, where they are focused into an ordered stream for deposition onto the surface of a piezoelectric substrate. The SAW device functions by transforming an applied voltage into an acoustic wave that travels across the surface at a material-dependent speed of sound <em>V<sub>SAW</sub></em>. Once it reaches a receiver, the acoustic wave is transformed back into a readable electrical signal.
+    <div style="border: 1px solid #444; border-radius: 10px; padding: 1rem; background-color: #111; max-width: 650px; margin: 2rem auto; text-align: center;">
+      <img 
+        src="images/mission/atomization_schematic.jpg" 
+        alt="Ultrasonic Atomization of Nanoparticle Ink" 
+        style="width: 100%; height: auto; border-radius: 6px;" 
+      />
+      <div style="font-size: 0.9rem; margin-top: 0.75rem; color: #aaa; line-height: 1.5;">
+        <strong>Figure:</strong> In this process, ultrasonically atomized nanoparticle ink droplets are carried from the ink reservoir to the printhead, where they are focused into an ordered stream for deposition onto the surface of a piezoelectric substrate. The SAW device functions by transforming an applied voltage into an acoustic wave that travels across the surface at a material-dependent speed of sound <em>V<sub>SAW</sub></em>. Once it reaches a receiver, the acoustic wave is transformed back into a readable electrical signal.
+      </div>
     </div>
-  </div>
 
-  <p>
-    At our core, we are driven by precision, performance, and the power of matter. Our lab-to-launch approach ensures 
-    that each project is built with scientific integrity and engineered for real-world scalability.
-  </p>
+    <p>
+      At our core, we are driven by precision, performance, and the power of matter. Our lab-to-launch approach ensures 
+      that each project is built with scientific integrity and engineered for real-world scalability.
+    </p>
 
-  <div class="footer-note">
-    This image is shared under the 
-    <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #00d8ff;">
-      Creative Commons Attribution 4.0 International License
-    </a>. Proper attribution to the original authors is maintained.
-  </div>
+    <div class="footer-note">
+      This image is shared under the 
+      <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #00d8ff;">
+        Creative Commons Attribution 4.0 International License
+      </a>. Proper attribution to the original authors is maintained.
+    </div>
+  </section>
 </body>
 </html>
