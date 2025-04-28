@@ -35,12 +35,25 @@
       margin: 4rem 0;
       text-align: center;
     }
-    .section img {
-      max-width: 100%;
+    .framed-image {
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 1rem;
+      background-color: #111;
+      max-width: 650px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .framed-image img {
+      width: 100%;
       height: auto;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      border: 1px solid #333;
+      border-radius: 6px;
+    }
+    .caption {
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      color: #aaa;
+      line-height: 1.5;
     }
     .section button {
       background-color: #00d8ff;
@@ -51,6 +64,7 @@
       border-radius: 6px;
       cursor: pointer;
       font-size: 1rem;
+      margin-top: 1rem;
     }
     .section button:hover {
       background-color: #00b0cc;
@@ -83,22 +97,34 @@
 
   <section class="section">
     <h2>Advanced Materials</h2>
-    <img src="images/index/index_image1.jpg" alt="Pendant Drop and XRD">
-    <br>
+    <div class="framed-image">
+      <img src="images/index/index_image1.jpg" alt="Pendant Drop and XRD">
+      <div class="caption">
+        Silver nanoparticle ink characterization via dynamic light scattering and pendant drop surface tension measurement, alongside XRD confirmation of nickel nanoparticle sintering.
+      </div>
+    </div>
     <button onclick="window.location.href='materials.html'">Explore Materials</button>
   </section>
 
   <section class="section">
     <h2>Precision Fabrication</h2>
-    <img src="images/index/index_image2.jpg" alt="Silver SAW Device and Nickel Bronco Print">
-    <br>
+    <div class="framed-image">
+      <img src="images/index/index_image2.jpg" alt="Silver SAW Device and Nickel Bronco Print">
+      <div class="caption">
+        Advanced aerosol jet printing and microscale fabrication demonstrated through stitched silver SAW devices and printed nickel microstructures.
+      </div>
+    </div>
     <button onclick="window.location.href='fabrication.html'">Explore Fabrication</button>
   </section>
 
   <section class="section">
     <h2>Device Characterization</h2>
-    <img src="images/index/index_image3.jpg" alt="Raman Mapping and S21 Measurement">
-    <br>
+    <div class="framed-image">
+      <img src="images/index/index_image3.jpg" alt="Raman Mapping and S21 Measurement">
+      <div class="caption">
+        Graphene Raman mapping on printed nickel structures and S21 RF characterization of printed silver surface acoustic wave devices across temperature variations.
+      </div>
+    </div>
     <button onclick="window.location.href='characterization.html'">Explore Characterization</button>
   </section>
 
