@@ -15,66 +15,59 @@
       padding: 2rem;
     }
     nav {
-      position: sticky;
-      top: 0;
-      background-color: #0a0a0a;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 60px;
-      border-bottom: 2px solid #333;
-      z-index: 999;
-    }
+  position: sticky;
+  top: 0;
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Control height here again */
+  border-bottom: 1px solid #333;
+  z-index: 999;
+}
 
-    nav div {
-      display: flex;
-      align-items: center;
-    }
+nav div {
+  display: flex;
+  align-items: center;
+}
 
-    nav a {
-      color: #00d8ff;
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-weight: 600;
-    }
-
-    .container {
-      max-width: 90%;
-      margin: 0 auto;
-    }
-
+nav a {
+  color: #00d8ff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
     .hero {
-      margin-top: 3rem;
-      text-align: center;
-      background-image: url("images/index/background.jpg");
-      background-size: cover;
-      background-position: center;
-      padding: 4rem 2rem;
-      border-radius: 10px;
-      position: relative;
-      color: #fff;
-    }
+  margin-top: 3rem;
+  text-align: center;
+  background-image: url("images/index/background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+}
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--hero-bg, rgba(0, 0, 0, 0.2));
-      border-radius: 10px;
-      backdrop-filter: blur(var(--hero-blur, 0px));
-      transition: backdrop-filter 0.5s ease, background 0.5s ease;
-    }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--hero-bg, rgba(0, 0, 0, 0.2));
+  border-radius: 10px;
+  backdrop-filter: blur(var(--hero-blur, 0px));
+  transition: backdrop-filter 0.5s ease, background 0.5s ease;
+}
 
-    .hero h1,
-    .hero p,
-    .hero button {
-      position: relative;
-      z-index: 1;
-    }
-
+.hero h1,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 1;
+}
     .hero button {
       background-color: #00d8ff;
       color: #0a0a0a;
@@ -85,34 +78,29 @@
       cursor: pointer;
       margin-top: 1rem;
     }
-
     .hero button:hover {
       background-color: #00b0cc;
     }
-
     .section {
       margin: 4rem 0;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 2rem;
     }
-
     .section-content {
       flex: 1;
       max-width: 300px;
       text-align: left;
     }
-
     .section-content h2 {
       margin-bottom: 1rem;
     }
-
     .section-content p {
       color: #aaa;
       font-size: 0.95rem;
       line-height: 1.5;
     }
-
     .section-content button {
       background-color: #00d8ff;
       color: #0a0a0a;
@@ -123,16 +111,13 @@
       cursor: pointer;
       margin-top: 1rem;
     }
-
     .section-content button:hover {
       background-color: #00b0cc;
     }
-
     .section-image {
       flex: 2;
       max-width: 700px;
     }
-
     .section-image img {
       width: 100%;
       height: auto;
@@ -141,12 +126,10 @@
       padding: 1rem;
       border: 1px solid #444;
     }
-
     .final-cta {
       text-align: center;
       margin-top: 4rem;
     }
-
     .final-cta button {
       background-color: #00d8ff;
       color: #0a0a0a;
@@ -157,23 +140,21 @@
       cursor: pointer;
       margin-top: 1rem;
     }
-
     .final-cta button:hover {
       background-color: #00b0cc;
     }
-
     .divider {
-      border: none;
-      border-top: 2px solid rgba(255, 255, 255, 0.1);
-      margin: 3rem auto;
-      width: 90%;
-    }
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 2rem auto;
+    width: 80%;
+  }
   </style>
 </head>
 <body>
   <nav>
     <div style="display: flex; align-items: center;">
-      <img src="images/logo/Logo_AM.jpg" alt="Apex MatterWorks Logo" style="height: 60px; margin-right: 10px;">
+      <img src="images/logo/Logo_AM.jpg" alt="Apex MatterWorks Logo" style="height: 60px; margin-right: 10px; transform: translateY(0px);">
       <strong style="font-size: 1.5rem;">Apex MatterWorks</strong>
     </div>
     <div>
@@ -191,58 +172,45 @@
     <p>Welcome to Apex MatterWorks, where advanced materials, scalable manufacturing, and next-gen engineering converge to empower real-world innovation.</p>
     <button onclick="window.location.href='quote.html'">Get a Quote</button>
   </section>
-
   <hr class="divider">
-
-  <div class="container">
-    <section class="section">
-      <div class="section-content">
-        <h2>Advanced Materials</h2>
-        <p>Nanoparticle synthesis, dispersion formulation, and advanced ink preparation for scalable manufacturing and unique material properties.</p>
-        <button onclick="window.location.href='materials.html'">Explore Materials</button>
-      </div>
-      <div class="section-image">
-        <img src="images/index/index_image1.jpg" alt="Pendant Drop and XRD">
-      </div>
-    </section>
-  </div>
-
+  <section class="section">
+    <div class="section-content">
+      <h2>Advanced Materials</h2>
+      <p>Nanoparticle synthesis, dispersion formulation, and advanced ink preparation for scalable manufacturing and unique material properties.</p>
+      <button onclick="window.location.href='materials.html'">Explore Materials</button>
+    </div>
+    <div class="section-image">
+      <img src="images/index/index_image1.jpg" alt="Pendant Drop and XRD">
+    </div>
+  </section>
   <hr class="divider">
-
-  <div class="container">
-    <section class="section">
-      <div class="section-content">
-        <h2>Precision Fabrication</h2>
-        <p>Aerosol jet printing, fine feature microfabrication, and multi-material device integration with micron-level control.</p>
-        <button onclick="window.location.href='fabrication.html'">Explore Fabrication</button>
-      </div>
-      <div class="section-image">
-        <img src="images/index/index_image2.jpg" alt="Silver SAW Device and Nickel Bronco Print">
-      </div>
-    </section>
-  </div>
-
+  <section class="section">
+    <div class="section-content">
+      <h2>Precision Fabrication</h2>
+      <p>Aerosol jet printing, fine feature microfabrication, and multi-material device integration with micron-level control.</p>
+      <button onclick="window.location.href='fabrication.html'">Explore Fabrication</button>
+    </div>
+    <div class="section-image">
+      <img src="images/index/index_image2.jpg" alt="Silver SAW Device and Nickel Bronco Print">
+    </div>
+  </section>
   <hr class="divider">
-
-  <div class="container">
-    <section class="section">
-      <div class="section-content">
-        <h2>Device Characterization</h2>
-        <p>Electrical, RF, and thermal analysis of printed and fabricated devices to ensure performance meets rigorous application demands.</p>
-        <button onclick="window.location.href='characterization.html'">Explore Characterization</button>
-      </div>
-      <div class="section-image">
-        <img src="images/index/index_image3.jpg" alt="Raman Mapping and S21 Measurement">
-      </div>
-    </section>
-  </div>
+  <section class="section">
+    <div class="section-content">
+      <h2>Device Characterization</h2>
+      <p>Electrical, RF, and thermal analysis of printed and fabricated devices to ensure performance meets rigorous application demands.</p>
+      <button onclick="window.location.href='characterization.html'">Explore Characterization</button>
+    </div>
+    <div class="section-image">
+      <img src="images/index/index_image3.jpg" alt="Raman Mapping and S21 Measurement">
+    </div>
+  </section>
 
   <section class="final-cta">
     <h2>Let's Build Together</h2>
     <p>Apex MatterWorks can meet your custom project needs from materials to finished devices. Get in touch today to discuss your vision.</p>
     <button onclick="window.location.href='quote.html'">Get a Quote</button>
   </section>
-
   <script>
     window.addEventListener('scroll', () => {
       const hero = document.querySelector('.hero');
@@ -255,7 +223,7 @@
         hero.style.setProperty('--hero-bg', 'rgba(0, 0, 0, 0.2)');
       }
     });
-  </script>
+    </script>
 
 </body>
 </html>
