@@ -21,19 +21,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Add padding instead of fixed height */
+  height: 60px; /* Control height here again */
   border-bottom: 1px solid #333;
   z-index: 999;
 }
-nav img {
-  height: 60px; /* Ensure logo always has space */
+
+nav div {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem; /* Add padding here instead */
 }
-    nav a {
-      color: #00d8ff;
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-weight: 600;
-    }
+
+nav a {
+  color: #00d8ff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
     .hero {
   margin-top: 3rem;
   text-align: center;
